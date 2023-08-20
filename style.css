@@ -1,16 +1,14 @@
 body{
+    overflow-x: hidden;
     margin: 0;
     text-align: center;
-}
-
-.container{
-    width: 100%;
     height: 100%;
     background-color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #title{
-    padding: 25px;
+    padding: 10px;
 }
 
 .box-container{
@@ -23,12 +21,22 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20px auto 20px auto;
-    font-size: 2em;
-    height: 150px;
-    width: 300px;
+    font-size: 3em;
+    font-weight: bolder;
+    height: 200px;
+    width: 350px;
     border-radius: 20px;
     box-shadow: 7px 7px rgba(0, 50, 50, 0.1);
     background-color: rgb(45, 140, 140);
     color: white;
+    transition: all 1s ease-out;
+}
+
+.hide:nth-child(even){
+    transform: translateX(500%);
+}
+
+.hide:nth-child(odd){
+    transform: translateX(-500%);
 }
 
